@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles.css">
+<title>Montes de Oro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+
 </head>
+
 <body>
-    <h1>Hellooo</h1>
+
+<div class="carrito">
+🛒 Carrito: <span id="contador">0</span>
+</div>
+
+<header>
+<h1>Montes de Oro ☕</h1>
+</header>
+
+<section class="hero">
+<h2>El arte del café en cada grano</h2>
+<p>Granos selectos cultivados en las montañas del Perú</p>
+</section>
+
+<section class="section">
+<h3>Nuestros Cafés</h3>
+
+<div class="productos">
+
+<div class="producto">
+<img src="img/clasico.png"
+onclick="abrirModal('Clásico','S/ 25.00','Equilibrado y tradicional.','img/clasico.png')">
+<h4>Clásico</h4>
+</div>
+
+<div class="producto">
+<img src="img/intenso.png"
+onclick="abrirModal('Intenso','S/ 30.00','Fuerte y con carácter.','img/intenso.png')">
+<h4>Intenso</h4>
+</div>
+
+<div class="producto">
+<img src="img/reserva.png"
+onclick="abrirModal('Reserva','S/ 35.00','Selección premium especial.','img/reserva.png')">
+<h4>Reserva</h4>
+</div>
+
+</div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal()">✖</span>
+
+    <img id="modalImg" src="" style="width:200px; border-radius:15px; margin-bottom:15px;">
+
+    <h3 id="modalTitulo"></h3>
+    <p id="modalDesc"></p>
+    <h4 id="modalPrecio"></h4>
+
+    <button class="btn" onclick="agregarCarrito()">Agregar al carrito</button>
+    <br><br>
+    <a id="whatsLink" class="btn" target="_blank">Comprar por WhatsApp</a>
+  </div>
+</div>
+
+<a class="whatsapp" href="https://wa.me/51952105060" target="_blank">💬</a>
+
+<section class="sobre">
+    <div class="sobre-contenido">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En <strong>Montes de Oro</strong> creemos que cada taza cuenta una historia.
+            Trabajamos con productores peruanos seleccionando cuidadosamente
+            cada grano para garantizar aroma, frescura y calidad superior.
+        </p>
+
+        <p>
+            Nuestro café es cultivado en las montañas del Perú,
+            respetando la tradición y los procesos artesanales.
+            Más que café, ofrecemos una experiencia.
+        </p>
+    </div>
+</section>
+
+<footer>
+© 2026 Montes de Oro - Todos los derechos reservados
+</footer>
+
+
 </body>
 </html>
