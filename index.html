@@ -12,6 +12,12 @@
 
 <body>
 
+ <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <div style="z-index: 999; position: fixed; bottom: 20px; right: 20px;">
+    <df-messenger intent="WELCOME" chat-title="cafébot" agent-id="55cec3ea-e0a8-45a5-819a-292a2b2ac288"
+      language-code="es"></df-messenger>
+  </div>  
+
 <div class="carrito">
 🛒 Carrito: <span id="contador">0</span>
 </div>
@@ -68,7 +74,7 @@ onclick="abrirModal('Reserva','S/ 35.00','Selección premium especial.','img/res
   </div>
 </div>
 
-<a class="whatsapp" href="https://wa.me/51952105060" target="_blank">💬</a>
+<a class="whatsapp" href="https://wa.me/51952105060?text=Hola,%20vi%20su%20página%20web%20y%20quisiera%20más%20información%20sobre%20sus%20cafés" target="_blank">💬</a>
 
 <section class="sobre">
     <div class="sobre-contenido">
